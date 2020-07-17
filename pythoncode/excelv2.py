@@ -1,5 +1,5 @@
 import openpyxl
-import web as w
+from pythoncode import webfunction as w
 
 ##엑셀파일 경로
 workbook = openpyxl.load_workbook('C:/Users/i5533/OneDrive/바탕 화면/바탕화면정리/빅데이터공모전/딥러닝/데이터엑셀/값.xlsx')
