@@ -51,8 +51,8 @@ def getpicture(searchterm,cnt):
     # div태그에서 class name이 rg_meta인 것을 찾아온다
     # div태그에서 class name이 rg_meta인 것을 찾아온다
     for x in browser.find_elements_by_xpath('//img[contains(@class,"rg_i Q4LuWd")]'):
-        alarm = Alarm(10)
-        alarm.run()
+        #alarm = Alarm(10)
+        #alarm.run()
         try:
             counter = counter + 1
             print("Total Count:", counter)
@@ -71,7 +71,7 @@ def getpicture(searchterm,cnt):
         except Exception:
             continue
         finally:
-            del alarm
+            #del alarm
             succounter = succounter + 1
             if succounter >= cnt:
                 break;

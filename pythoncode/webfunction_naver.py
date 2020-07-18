@@ -61,8 +61,8 @@ def getpicture(searchterm,poi,cnt):
 
     #다운로드
     for index, link in tqdm(enumerate(result)): #tqdm은 작업현황을 알려줌.
-        alarm = Alarm(10)
-        alarm.run()
+        #alarm = Alarm(10)
+        #alarm.run()
         try:
             start=link.rfind('.') #뒤쪽부터 검사
             end=link.rfind('&')
@@ -71,5 +71,5 @@ def getpicture(searchterm,poi,cnt):
             urllib.request.urlretrieve(link,forfile + searchterm + 'Naver_' + str(index) + '.'+filetype)
         except Exception:
             continue
-        finally:
-            del alarm
+        #finally:
+            #del alarm
